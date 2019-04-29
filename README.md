@@ -14,7 +14,7 @@ To Run:
 
 * Please create your own Github access token by following these steps:
 
-https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line
+	https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line
 
 * While creating the token, please check these scopes: repo, admin:org, notifications, user
 
