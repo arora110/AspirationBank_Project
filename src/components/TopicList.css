@@ -1,0 +1,17 @@
+.list {
+  background-color: white;
+  margin: auto;
+  width: 30%;
+  border: 3px solid green;
+  padding: 30px;
+  height: 30%;
+  float: left;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.center-text {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+}
