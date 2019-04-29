@@ -29,7 +29,7 @@ export default class TopicList extends Component {
         >
           {({ loading, error, data }) => {
             if (loading) return <p>loading...</p>;
-            if (error) return <p>error!</p>;
+            if (error) return <p>error! </p>;
             const listItems = data.topic.relatedTopics.map((topic, index) => (
               <button key={index} onClick={e => this.handleClick(topic.name)}>
                 {topic.name + ': ' + topic.stargazers.totalCount} &#9733;
