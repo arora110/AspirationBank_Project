@@ -82,8 +82,6 @@ it('renders an error message in UI', async () => {
   expect(JSON.stringify(tree.children)).toContain('error!');
 });
 
-// I couldn't figure out how to extract button objects from the component tree
-// Enzyme might work, but a shallow render won't execute Mocked Provider
 it('renders Related Topics into buttons', async () => {
   const component = renderer.create(
     <MockedProvider mocks={mocks} addTypename={false}>
@@ -97,6 +95,9 @@ it('renders Related Topics into buttons', async () => {
   expect(tree).toContain('angular');
   expect(tree).toContain('jest');
   expect(tree).toContain('vue');
+  // This check could be more specific.
+  // I couldn't figure out how to extract button objects from the component tree.
+  // Enzyme might work, but a shallow render won't execute Mocked Provider
 });
 
-// (MISSING TEST) redners new list of topics when a button is clicked
+// (MISSING TEST) renders new list of topics when a button is clicked

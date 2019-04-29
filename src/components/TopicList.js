@@ -3,7 +3,9 @@ import { Query } from 'react-apollo';
 import './TopicList.css';
 import { GET_RELATED_TOPICS_QUERY } from '../queries';
 
-// Displays a list of
+// Displays a list of Related Github Topics
+// Clicking on a Related Topic will update the list to display
+// a new list of topics related to the topic clicked on
 export default class TopicList extends Component {
   constructor() {
     super();
@@ -12,6 +14,7 @@ export default class TopicList extends Component {
     };
   }
 
+  // Updates the main topic stored in local state
   handleClick = e => {
     this.setState(state => ({
       topic: e,
